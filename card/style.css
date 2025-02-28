@@ -1,0 +1,215 @@
+/* Define a codificação de caracteres para o arquivo CSS */
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'fonte1';
+    src: url(font/fathers_display/FathersDisplayRegular.ttf);
+}
+
+/* Configurações gerais do corpo da página */
+body {
+    /* Define a cor de fundo da página */
+    background-color: antiquewhite;
+}
+
+/* Configurações do título principal da página */
+H1 {
+    font-family: 'fonte1', sans-serif;
+    font-size: 12em;
+    text-align: center;    /* Centraliza o texto */
+    color: black;
+    margin: 3px;
+    text-shadow: 2px 2px 4px #FF0000, /* sombra vermelha */
+    -2px -2px 4px #0000FF; /* sombra azul */
+       /* Adiciona uma sombra ao texto */
+}
+
+/* Configurações do container que envolve os cards */
+.container-cards {
+    background-color: antiquewhite;
+    /* Define o layout como flexbox */
+    display: flex;
+    /* Permite que os elementos sejam quebrados em linhas novas */
+    flex-wrap: wrap;
+    /* Adiciona espaçamento entre os elementos */
+    padding: 5px 0px 5px 0px;
+    justify-content: center;
+}
+
+/* Configurações dos cards */
+.card {
+    /* Define a largura do card */
+    width: 200px;
+    /* Adiciona uma borda ao card */
+    border: 2px solid black;
+    /* Define a cor de fundo do card */
+    background-color: aliceblue;
+    /* Adiciona espaçamento entre os elementos */
+    padding: 10px;
+    /* Arredonda as bordas do card */
+    border-radius: 10px;
+    /* Adiciona espaçamento entre os cards */
+    margin: 10px;
+}
+
+/* Configurações do container que envolve as imagens */
+.container-slide {
+    /* Define a largura do container */
+    width: 200px;
+    /* Não quebra as palavras */
+    white-space: nowrap;
+    /* Oculta o conteúdo que ultrapassa a largura */
+    overflow: hidden;
+    /* Adiciona um cursor de ponteiro */
+    cursor: pointer;
+}
+
+/* Configurações das imagens */
+.paginas-slide {
+    /* Define o layout como inline-block */
+    display: inline-block;
+    /* Adiciona uma transição suave */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Configurações das imagens */
+.paginas-slide img {
+    /* Define a largura da imagem */
+    width: 200px;
+    /* Oculta as imagens por padrão */
+    display: none;
+}
+
+/* Configurações da primeira imagem */
+.paginas-slide img:first-child {
+    /* Mostra a primeira imagem */
+    display: inline-block;
+}
+
+/* Animação das imagens ao passar o mouse */
+.container-slide:hover .paginas-slide {
+    /* Define a animação */
+    animation: anima 5s linear infinite;
+}
+
+/* Definição da animação */
+@keyframes anima {
+
+    /* Início da animação */
+    0% {
+        /* Não move a imagem */
+        transform: translateX(0);
+    }
+
+    /* Fim da animação */
+    100% {
+        /* Move a imagem para a esquerda */
+        transform: translateX(-50%);
+    }
+}
+
+/* Mostra as imagens ao passar o mouse */
+.container-slide:hover .paginas-slide img {
+    /* Mostra as imagens */
+    display: inline-flex;
+}
+
+/* Configurações do nome da camisa */
+h2 {
+    /* Centraliza o texto */
+    text-align: center;
+}
+
+/* Configurações dos preços e classificação */
+.container-meio {
+    /* Define a cor de fundo */
+    background-color: antiquewhite;
+    /* Define o layout como flexbox */
+    display: flex;
+    /* Justifica o conteúdo */
+    justify-content: space-between;
+}
+
+/* Configurações da imagem */
+#imagem {
+    /* Define o layout como flexbox */
+    display: flex;
+    /* Justifica o conteúdo */
+    justify-content: space-evenly;
+    /* Arredonda as bordas */
+    border-radius: 15px;
+}
+
+/* Configurações das imagens */
+.paginas-slide img {
+    /* Arredonda as bordas */
+    border-radius: 10px;
+}
+
+/* Configurações do container que envolve as imagens */
+.container-slide {
+    /* Arredonda as bordas */
+    border-radius: 10px;
+    /* Adiciona uma sombra */
+    box-shadow: 2px 2px 13px;
+}
+
+/* Configurações do preço */
+.valor {
+    /* Adiciona espaçamento */
+    margin: 5px;
+    /* Define o peso da fonte */
+    font-weight: 900;
+}
+
+/* Configurações do preço original */
+.valor-original {
+    /* Adiciona espaçamento */
+    margin: 5px;
+    /* Define o espaçamento entre linhas */
+    padding: 0pc;
+    /* Define o tamanho da fonte */
+    font-size: 0.8em;
+}
+
+/* Configurações das estrelas */
+.classificacao {
+    /* Remove o espaçamento inferior */
+    margin-bottom: 0px;
+    /* Define o layout como flexbox */
+    display: flex;
+    /* Define o tamanho da fonte */
+    font-size: 13px;
+}
+
+/* Configurações da nota */
+.valor-classificacao>span {
+    /* Define a cor de fundo */
+    background-color: yellow;
+    /* Arredonda as bordas */
+    border-radius: 3px;
+    /* Centraliza o texto */
+    text-align: center;
+    /* Adiciona espaçamento */
+    padding: 1px;
+    /* Adiciona espaçamento */
+    margin: 5px;
+}
+
+/* Configurações do botão do carrinho */
+.btn-add-carrinho {
+    /* Define o layout como block */
+    display: block;
+    /* Define a cor de fundo */
+    background-color: black;
+    /* Centraliza o texto */
+    text-align: center;
+    /* Remove a decoração do link */
+    text-decoration: none;
+    /* Define a cor do texto */
+    color: white;
+    /* Adiciona espaçamento */
+    padding: 5px;
+    /* Arredonda as bordas */
+    border-radius: 5px;
+}
