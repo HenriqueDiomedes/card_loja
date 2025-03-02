@@ -43,7 +43,7 @@ H1 {
     /* Adiciona uma borda ao card */
     border: 2px solid black;
     /* Define a cor de fundo do card */
-    background-color: aliceblue;
+    background-color: rgba(55, 56, 58, 0.11);
     /* Adiciona espaçamento entre os elementos */
     padding: 10px;
     /* Arredonda as bordas do card */
